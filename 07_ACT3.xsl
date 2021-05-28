@@ -137,12 +137,6 @@
 
 					</table>
 
-					<br></br>
-					<br></br>
-					<br></br>
-					<br></br>
-					<br></br>
-
 
 					<h5>Teléfono de contacto:</h5>
 				

@@ -210,10 +210,17 @@ aside{
     
     aside {
         display: none;
+        z-index: 1;
     }
     section {
         width: 100%;
+        z-index: 2;
     }
+    footer{
+        z-index: 3;
+    }
+
+    
 }
 
 
