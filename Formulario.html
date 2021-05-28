@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+
+        main {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            
+            overflow: auto;
+            background-color: rgb(159, 128, 180);
+        }
+
+        section {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            
+            overflow: auto;
+            background-color: rgb(240, 140, 110);
+
+
+        }
+
+        aside{
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+           
+            overflow: auto;
+            background-color: rgb(120, 213, 230);
+
+        }
+
+        footer{
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+           
+            overflow: auto;
+            background-color: rgb(219, 167, 240);
+
+        }
+
+       
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Formulario de contacto/Contact Form</h1>
+   
+    <form action="procesarPeticion.jsp" method="GET">
+        
+        <fieldset><legend>Datos personales/ Personal data:</legend>
+            
+            <label for="nombre">Nombre / Name:  </label>
+            <input id="nombre" type="text" name="nombre" />
+            
+            <label for="apellidos">Apellidos /Forename: </label>
+            <input id="apellidos" type="text" name="apellidos" />
+
+            <label for="dni">DNI:</label>
+            <input id=dni type="text" name="dni">
+
+            <br>
+            
+            <br/>
+            <label for="direccion">Dirección / Adress: </label>
+            <input id="direccion" type="text" name="direccion" />
+            
+            <label for="localidad">Localidad / Village</label>
+            <input id="localidad" type="text" name="localidad">
+            <br>
+            <br/>
+            <label for="telefono">Teléfono/ Number</label>
+            <input id="telefono" type="text" name="localidad">
+            <br>
+            <br/>
+            <h3>Fecha de nacimiento / Birth Date: </h3>
+            <input type="date" name="color"/>
+            
+            </fieldset>
+        </main>
+
+        <section>
+            <fieldset><legend>Grado que quiere cursar/Choose your option:</legend>
+            
+            <br />	
+            <input type="radio" name="tipo de grado" value="A" />ASIR<br />	
+            <input type="radio" name="tipo de grado" value="M" />DAM<br />	
+            <input type="radio" name="tipo de grado" value="W" />DAW<br />	
+            
+            
+            
+            <br />
+
+        </section>
+            
+            <br/>
+
+            <aside>
+            <label for="observaciones">Su mensaje / message: </label>
+            
+            <br />	
+            <textarea rows="16" cols="110" name="observaciones" placeholder="Escriba su opinión/ Write your opinion..."></textarea>
+             
+        </aside>
+        <footer>
+            <br/>
+            <br/>
+            <label for="terminos">Acepta los terminos de uso?/ Accept the terms? </label>
+            <br/>	
+            He leido y acepto los terminos de uso / I have read and accept the terms above <input type="checkbox" name="terminos" value="Y" />
+            <br/>	
+           
+            <br/>	
+            <input type="submit" value="Enviar datos/ Send " />
+           
+            <input type="reset" value="Limpiar formulario/ Clean" />
+        </footer>
+        </fieldset>
+    </form>
+</body>
+</html>
